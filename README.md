@@ -63,7 +63,7 @@ Her GPS uydusuna özgü, 1023 chip uzunluğunda bir Gold kodu üretir. Bu kod, u
 
 **Neden 1023 chip, neden Gold kodu?**
 - GPS standardı (ICD-200), C/A kodunu 1.023 MHz chip hızında, 1 milisaniyelik bir periyotta yayınlar (1023 = 1.023 MHz × 1 ms).
-- Gold kodları, iki ayrı kaydırmalı yazmaç (G1 ve G2) çıkışının XOR'lanmasıyla üretilir ve çok iyi bir **oto-korelasyon** özelliğine sahiptir — yani kod kendisiyle çakıştığında keskin bir tepe verir, kaymış hâldeyken ise neredeyse sıfıra yakın bir değer üretir. Bu özellik, spoofing tespitinin matematiksel temelini oluşturur.
+- Gold kodları, iki ayrı shifted register (G1 ve G2) çıkışının XOR'lanmasıyla üretilir ve çok iyi bir **oto-korelasyon** özelliğine sahiptir — yani kod kendisiyle çakıştığında keskin bir tepe verir, kaymış hâldeyken ise neredeyse sıfıra yakın bir değer üretir. Bu özellik, spoofing tespitinin matematiksel temelini oluşturur.
 
 **Nasıl çalışır?**
 ```matlab
